@@ -17,3 +17,12 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+ //---------Box---------
+
+  .box {
+      background-image: image-url("https://ww1.sinaimg.cn/large/006tNc79gy1ffr1ahtun9j31ao0kaq3o.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 50px;
+ }
