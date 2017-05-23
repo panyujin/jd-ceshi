@@ -1,1 +1,201 @@
-<h1> Hello World! </h1>
+<!DOCTYPE html>
+    <!--/products-->
+  	<div class="products" id="products">
+  		   <div class="container">
+  		    <h3 class="tittle">PRODUCTS</h3>
+          <div class="bg-grey">
+          <div class="carousel">
+
+            <h2 class="slogan"> 一次品味 一生回味 心动一刻 情注一生 </h2>
+            <p class="sub-slogan2"> 天然品味，自然尊贵。美在生态，贵在品质。 </p>
+            <%= link_to("立即抢购", products_path, class: "btn btn-danger btn-lg call-action") %>
+          </div>
+
+  			<ul id="flexiselDemo3">
+  				<li>
+  					<div class="biseller-column">
+  					<a class="lightbox" href="#goofy">
+  								   <img src="http://oq3mpwc6v.bkt.clouddn.com/%E9%A6%99%E6%A7%9F1.jpg"/>
+  								</a>
+  								<div class="lightbox-target" id="goofy">
+  									  <img src="http://oq3mpwc6v.bkt.clouddn.com/%E9%A6%99%E6%A7%9F1.jpg"/>
+  								   <a class="lightbox-close" href="#"> </a>
+
+  									<div class="clearfix"> </div>
+  								</div>
+  					</div>
+  				</li>
+  				<li>
+  					<div class="biseller-column">
+  					<a class="lightbox" href="#goofy">
+  								  <img src="http://oq3mpwc6v.bkt.clouddn.com/%E5%B9%B2%E7%99%BD1.jpg"/>
+  								</a>
+  								<div class="lightbox-target" id="goofy">
+  									  <img src="http://oq3mpwc6v.bkt.clouddn.com/%E5%B9%B2%E7%99%BD1.jpg"/>
+  								   <a class="lightbox-close" href="#"> </a>
+
+  									<div class="clearfix"> </div>
+  								</div>
+  					</div>
+  				</li>
+  				<li>
+  					<div class="biseller-column">
+  					<a class="lightbox" href="#goofy">
+  								  <img src="http://oq3mpwc6v.bkt.clouddn.com/%E6%8B%89%E8%8F%B23.jpg"/>
+  								</a>
+  								<div class="lightbox-target" id="goofy">
+  									  <img src="http://oq3mpwc6v.bkt.clouddn.com/%E6%8B%89%E8%8F%B23.jpg"/>
+  								   <a class="lightbox-close" href="#"> </a>
+
+  									<div class="clearfix"> </div>
+  								</div>
+  					</div>
+  				</li>
+  				<li>
+  					<div class="biseller-column">
+  					<a class="lightbox" href="#goofy">
+  								    <img src="http://oq3mpwc6v.bkt.clouddn.com/%E7%88%B1%E6%AC%A7%E5%85%AC%E7%88%B51.jpg"/>
+  								</a>
+  								<div class="lightbox-target" id="goofy">
+  									<img src="http://oq3mpwc6v.bkt.clouddn.com/%E7%88%B1%E6%AC%A7%E5%85%AC%E7%88%B51.jpg"/>
+  								   <a class="lightbox-close" href="#"> </a>
+
+  									<div class="clearfix"> </div>
+  								</div>
+  					</div>
+  				</li>
+  				<li>
+  					<div class="biseller-column">
+  					<a class="lightbox" href="#goofy">
+  								  <img src="http://oq3mpwc6v.bkt.clouddn.com/xo2.jpg"/>
+  								</a>
+  								<div class="lightbox-target" id="goofy">
+  									  <img src="http://oq3mpwc6v.bkt.clouddn.com/xo2.jpg"/>
+  								   <a class="lightbox-close" href="#"> </a>
+
+  									<div class="clearfix"> </div>
+  								</div>
+  					</div>
+  				</li>
+  				<li>
+  					<div class="biseller-column">
+  					<a class="lightbox" href="#goofy">
+  								   <img src="http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%BA%E9%A9%AC%E5%A4%B4xo.jpg"/>
+  								</a>
+  								<div class="lightbox-target" id="goofy">
+  									<img src="http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%BA%E9%A9%AC%E5%A4%B4xo.jpg"/>
+  								   <a class="lightbox-close" href="#"> </a>
+
+  									<div class="clearfix"> </div>
+  								</div>
+  					</div>
+  				</li>
+  				<li>
+  					<div class="biseller-column">
+  								<a class="lightbox" href="#goofy">
+  								    <img src="http://oq3mpwc6v.bkt.clouddn.com/%E8%8C%85%E5%8F%B0%E9%85%921.jpg"/>
+  								</a>
+  								<div class="lightbox-target" id="goofy">
+  									<img src="http://oq3mpwc6v.bkt.clouddn.com/%E8%8C%85%E5%8F%B0%E9%85%921.jpg"/>
+  								   <a class="lightbox-close" href="#"> </a>
+
+  									<div class="clearfix"> </div>
+  								</div>
+  					</div>
+  				</li>
+  	     	</ul>
+  			</div>
+  			<script type="text/javascript">
+  				 $(window).load(function() {
+  					$("#flexiselDemo3").flexisel({
+  						visibleItems:4,
+  						animationSpeed: 1000,
+  						autoPlay: true,
+  						autoPlaySpeed: 3000,
+  						pauseOnHover: true,
+  						enableResponsiveBreakpoints: true,
+  				    	responsiveBreakpoints: {
+  				    		portrait: {
+  				    			changePoint:480,
+  				    			visibleItems:3
+  				    		},
+  				    		landscape: {
+  				    			changePoint:640,
+  				    			visibleItems:3
+  				    		},
+  				    		tablet: {
+  				    			changePoint:768,
+  				    			visibleItems:3
+  				    		}
+  				    	}
+  				    });
+
+  				});
+  			   </script>
+  			   <script type="text/javascript" src="app/assets/javascripts.application.js"></script>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  <!--/products-->
+  <!--welcome-->
+		<div class="welcome">
+		   <div class="container">
+		      <div class="welcome-top">
+			   <div class="col-md-6 welcome-text">
+		          <h3 class="tittle two">WELCOME TO THE WINERY</h3>
+				  <p>Red for health, white for innocence, red and white for happiness, ice for a hundred years of sweet happiness, just to wait for your opening moment.</p>
+				  <p>Ice wine a cup of day drunk, ignore nine transfer immortal. Red wine with fresh, sweet but not greasy. Bai Bing wine cool and refreshing taste. Wine has become a kind of fashion, delicate taste with you in Maple world icewine!</p>
+				   <p>The food in the heart, in the cup - Maple Maple restaurant, noble quality, light luxury feelings, unique taste.</p>
+				</div>
+				 <div class="col-md-6 welcome-img">
+				   <img class="img-responsive " src="http://oq3mpwc6v.bkt.clouddn.com/wel.jpg" alt="" />
+				 </div>
+				<div class="clearfix"></div>
+			  </div>
+		   </div>
+		</div>
+	<!--//welcome-->
+
+<!--团队-->
+		<div class="team" id="team">
+	      <div class="container">
+			 <h3 class="tittle">OUR TEAM</h3>
+			<div class="main">
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item">
+							<div class="ch-info">
+								<h3>Winery</h3>
+								<p>by Jonathan Quintin <a href="#">酒·非凡，心·浪漫</a></p>
+							</div>
+							<div class="ch-thumb ch-img-1"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item">
+							<div class="ch-info">
+								<h3>Winery</h3>
+								<p>by Jon Gerlach <a href="#">感受浪漫典雅，品味尊贵奢华</a></p>
+							</div>
+							<div class="ch-thumb ch-img-2"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item">
+							<div class="ch-info">
+								<h3>Winery</h3>
+								<p>by Kawal Oberoi <a href="#">百年耕耘，“酒”负盛名</a></p>
+							</div>
+							<div class="ch-thumb ch-img-3"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+       </div>
+	<!--//team团队-->
+
+
+
+</html>

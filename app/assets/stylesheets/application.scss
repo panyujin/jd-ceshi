@@ -18,11 +18,27 @@
  @import "bootstrap";
  @import "font-awesome";
 
- //---------Box---------
+ /*===== Navbar 导航 ======*/
+.navbar.navbar-default {
+  background: rgba(0,0,0,0);
+  color: #000 !important;
 
-  .box {
-      background-image: image-url("https://ww1.sinaimg.cn/large/006tNc79gy1ffr1ahtun9j31ao0kaq3o.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-bottom: 50px;
- }
+  a:hover,
+  a:active,
+  a:focus {
+    color: #18FFFF !important;
+  }
+}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0; //圆角为0
+  }
+}
+//导航栏撑满
+html { height: 100%;}
+  body { min-height: 100%; display: flex; flex-direction: column;}
+   .content { flex: 1;}
+   body{
+     padding-top: 50px;
+   }
+   
